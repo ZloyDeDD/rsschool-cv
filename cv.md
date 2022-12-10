@@ -1,4 +1,4 @@
-![Аватар](https://avatars.githubusercontent.com/u/30837340?v=4)
+![Avatar](https://avatars.githubusercontent.com/u/30837340?v=4)
 
 # Max Borschev
 ## Junior Frontend Developer
