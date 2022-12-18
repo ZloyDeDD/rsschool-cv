@@ -1,3 +1,212 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+
   font-size: 16px;
+  line-height: 1.6;
+  font-family: "Roboto", "Arial", "Helvetica", sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  background-color: #fbede0;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.nav-link {
+  padding: 0 20px;
+
+  line-height: 50px;
+  color: #000000;
+
+  transition: 0.3s;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  opacity: 0.5;
+}
+
+.main {
+  padding: 50px 0;
+}
+
+.border {
+  border-radius: 35px;
+}
+
+.border-right {
+  border-radius: 0 35px 0 35px;
+}
+
+.border-left {
+  border-radius: 35px 0 35px 0;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.col-left {
+  width: 32%;
+}
+
+.col-right {
+  width: 65%;
+}
+
+.page-title {
+  font-size: 4rem;
+  line-height: 1;
+}
+
+.page-title .accent {
+  display: block;
+
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.section {
+  margin-bottom: 50px;
+  padding: 25px 50px;
+
+  background-color: #fbede0;
+}
+
+.section-title {
+  position: relative;
+
+  margin: 0;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+
+  font-size: 2rem;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100px;
+  height: 4px;
+
+  background-color: #000000;
+}
+
+.section-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.section-list-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.section-list p {
+  margin: 0;
+}
+
+.section-list-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.intro {
+  margin-bottom: 50px;
+}
+
+#about {
+  padding: 0;
+
+  background-color: transparent;
+}
+
+#experience {
+  background-color: #f9f4ee;
+}
+
+#experience .section-list-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+#contact {
+  background-color: #fbebeb;
+}
+
+#projects {
+  background-color: #f9f4ee;
+}
+
+#projects .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+#projects h3 {
+  margin: 0;
+
+  font-size: 1.5rem;
+}
+
+#languages .section-list-item b {
+  display: block;
+}
+
+#code {
+  background-color: #fbebeb;
+}
+
+.footer {
+  background-color: #fbede0;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .rs-school-logo {
+  display: flex;
 }
